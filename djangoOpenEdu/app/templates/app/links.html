@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% load staticfiles %}
+{% load static %}
 
 
 <head>
@@ -11,10 +11,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div class="header-links"><h1 class="header-links-title">Ссылки</h1></div>
     <div class="div-links-a">
-        <p><a href="https://www.gordonramsayrestaurants.com/" target="_blank"> <img src="{% static 'app/content/gordon.svg' %}" alt="Logo 1" /> - Gordon Ramsay</p></a>
-        <p><a href="https://www.foodandwine.com/news" target="_blank"> <img src="{% static 'app/content/foodAndWine.svg' %}" alt="Logo 1" /> - Food and Wine news</p></a>
-        <p><a href="https://www.nusr-et.com.tr/" target="_blank"> <img src="{% static 'app/content/nasret.svg' %}" alt="Logo 1" /> - Nusr-Et Steakhouse</p></a>
+        <p class="link-haha"><a class="link-needed" href="https://www.gordonramsayrestaurants.com/" target="_blank"> <img class="link-images" src="{% static 'app/content/PskObl.svg' %}" alt="Logo 1" /> - Псковская областная больница</p></a>
+        <p class="link-haha"><a class="link-needed" href="https://www.foodandwine.com/news" target="_blank"> <img img class="link-images" src="{% static 'app/content/PskGor.jpg' %}" alt="Logo 1" /> - Псковская городская больница</p></a>
+        <p class="link-haha"><a class="link-needed" href="https://www.nusr-et.com.tr/" target="_blank"> <img img class="link-images" src="{% static 'app/content/LenObl.svg' %}" alt="Logo 1" /> - Ленинградская областная больница</p></a>
     </div>
 </body>
 

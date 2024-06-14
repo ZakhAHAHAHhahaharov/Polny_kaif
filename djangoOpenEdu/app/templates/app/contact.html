@@ -1,20 +1,26 @@
 ﻿{% extends "app/layout.html" %}
-
+{% load static %}
+<script src="{% static 'app/scripts/bootstrap.js' %}"></script>
 {% block content %}
 
-<h2>{{ title }}</h2>
+<h2 class="contact-header">{{ title }}</h2>
 
 
-<address>
-    <br />
-    <p>Россия, Псков<br /></p>
-    <p> Льва толстого 3<br /><br /></p>
-    <p> +7 (8412) 66-64-19</p>
-</address>
-
-<address>
-    <strong>Поддержка:</strong>   <a href="mailto:Support@example.com">support.kitchen@gmail.com</a><br />
-    <strong>Предложения:</strong> <a href="mailto:Marketing@example.com">offers.kitchenOffers@gmail.com</a>
+<address class="adress-container">
+    <div class="adresses">
+        <div class="zapis">
+            <h2>Запись</h2>
+            <p class='text-to-copy' id="text-to-copy" onclick="TextToCopy()"> +7(900)362-23-43</p>
+        </div>
+        <div class="contact-center">
+            <h2>Контактный центр</h2>
+            <p class='text-to-copy' id="text-to-copy" onclick="TextToCopy()"> +7(921)600-17-38</p>
+        </div>
+    </div>
+    <div class="sotrudn-block">
+        <h2>Сотрудничество</h2>
+        <p class='text-to-copy' id="text-to-copy" onclick="TextToCopy()">psk.mrtkt@mail.ru</p>
+    </div>
 </address>
 
 {% endblock %}

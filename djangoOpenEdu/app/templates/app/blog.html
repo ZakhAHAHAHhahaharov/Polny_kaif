@@ -12,13 +12,18 @@
         </div>
     </div>
     <div>
-        <h2> {{ post.title }} </h2>
+        <div class="post-title-cont">
+            <h2> {{ post.title }} </h2>
+        </div>        
         <h4> {{ post.posted }} </h4>
-        <p> {{ post.author }} </p>
-
+        <div class="post-author-cont">
+            <p> {{ post.author }} </p>
+        </div>
 
         <p> {{ post.description }} </p>
-        <p><a href="{% url 'blogpost' parametr=post.id %}">ЧИТАТЬ ДАЛЕЕ!!!</a></p>
+        <div class="read-more-container">
+            <p><a class="read-more-text" href="{% url 'blogpost' parametr=post.id %}">Читать далее</a></p>
+        </div>
     </div>
 </div>
 {% endfor %}

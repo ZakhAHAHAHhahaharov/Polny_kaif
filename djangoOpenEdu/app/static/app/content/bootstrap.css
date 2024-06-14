@@ -339,9 +339,33 @@ textarea {
   background-image: none;
 }
 
+.header-links-title{
+  font-size: 50pt;
+}
+
+.header-links{
+  text-align: left;
+  margin-bottom: 10%;
+}
+
+.link-images{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.link-needed{
+  font-size: 25pt;
+}
+
 .div-links-a a {
-    color: #000 !important;
-    text-decoration: none
+    text-align: center;
+}
+
+.link-haha{
+  display: inline-block;
+  margin-bottom: 10%;
+  font-size: 40;
 }
 
 .div-links-a a:hover {
@@ -802,6 +826,7 @@ pre code {
 .row {
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 3%;
 }
 
 .row:before,
@@ -1110,6 +1135,7 @@ pre code {
   .col-md-10,
   .col-md-11 {
     float: left;
+    color:#000;
   }
   .col-md-1 {
     width: 8.333333333333332%;
@@ -2066,8 +2092,8 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-    color: #ffffff;
-    background-color: #FF6900;
+    color: #000000e7;
+    background-color: #00e3f35e;
 }
 
 .btn-default:hover,
@@ -2106,8 +2132,8 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    color: #ffffff;
-    background-color: #FF6900;
+    color: #000000e7;
+    background-color: #00e3f35e;
 }
 
 .btn-primary:hover,
@@ -4211,6 +4237,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  max-width: 10%;
 }
 
 .navbar-brand:hover,
@@ -4516,7 +4543,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-    background-color: #FF6900;
+    background-color: #00c3ff;
 }
 
 .navbar-inverse .navbar-brand {
@@ -4950,9 +4977,13 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
-  line-height: 2.1428571435;
+  line-height: 3;
   color: inherit;
   background-color: #ffffff;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 .jumbotron h1 {
@@ -6135,6 +6166,7 @@ body.modal-open,
   left: 50%;
   z-index: 5;
   display: inline-block;
+  opacity: 0;
 }
 
 .carousel-control .icon-prev,
@@ -6177,6 +6209,57 @@ body.modal-open,
   border-radius: 10px;
 }
 
+.img-obsled{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.sotrudn-block{
+  display: block;
+  margin: 10% auto;
+}
+
+
+.adress-container{
+  text-align: center;
+  border-style: dashed;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.text-to-copy{
+  cursor: pointer;
+}
+
+.contact-header{
+  text-align: center;
+}
+
+.zapis{
+  display: inline-block;
+  margin: 10px;
+}
+
+.contact-center{
+  display: inline-block;
+  margin: 10px;
+  padding-left: 10%;
+}
+
+.geo-container{
+  display: block;
+}
+
+.geo-text{
+  margin: 0 auto;
+  max-width: 40%;
+  text-align: center;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
@@ -6185,6 +6268,8 @@ body.modal-open,
 }
 
 .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 200px;
   position: absolute;
   right: 15%;
   bottom: 20px;
@@ -6192,7 +6277,7 @@ body.modal-open,
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -6835,4 +6920,162 @@ td.visible-print {
 
 .story-grid {
     grid-template-columns: 16.5625rem 1fr;
+    background-color: #D1FEFD;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    padding-bottom: 2%;
 }
+
+.post-title-cont{
+  border-bottom: solid ;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.post-author-cont{
+  text-align: right;
+}
+
+.read-more-container{
+  text-align: right;
+  padding-right: 20%;
+  padding-top: 10%
+}
+
+.read-more-text{
+  border-style: solid;
+  border-width: 1px;
+  background-color: #00c3ff;
+  border-radius: 30px;
+  color: #000000;
+  padding: 2%;
+}
+
+.read-more-text:hover{
+  background-color: #2a6496;
+  color:wheat;
+}
+
+.post-inside-title{
+  text-align: center;
+}
+
+.post-inside-title-text{
+  border-bottom: solid black;
+  border-width: 2px;
+  padding-top: 5%;
+}
+
+.blog-inside-body{
+  background-color: #D1FEFD;
+  border-radius: 100px;
+  border-width: 1px;
+  border: solid #559896;
+}
+
+.post-inside-img{
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.post-inside-content{
+  text-align: center;
+  margin-bottom: 3%;
+  border-bottom: solid black;
+  border-width: 2px;
+}
+
+.back-you-goo{
+  padding-left: 5%;
+  margin-bottom: 3%;
+}
+
+.back-you-goo-button{
+  border-style: solid;
+  border-width: 1px;
+  background-color: #00c3ff;
+  border-radius: 30px;
+  color: #000000;
+  padding: 1%;
+}
+
+.back-you-goo-button:hover{
+  background-color: #2a6496;
+  color:wheat;
+}
+
+.comment-section-container{
+  padding-left: 5%;
+}
+
+.post-inside-author-name{
+  color: black;
+}
+
+.already-posted-comments-list{
+  text-align: right;
+  margin-right: 15%;
+  padding-right: 5%;
+  border-right: solid #559896;
+  border-top: solid #559896;
+  border-radius: 30px;
+  padding-top: 2%;
+}
+
+.already-posted-comments{
+  border-top: solid #559896;
+  border-width: 1px;
+  margin-left: 30%;
+}
+
+.submit-button-poll {
+  padding: 10px 20px; /* Поля внутри кнопки */
+  border: none; /* Убираем границу */
+  cursor: pointer; /* Изменяем вид курсора */
+  background-color: rgb(255, 105, 0); /* Цвет фона кнопки */
+  color: white; /* Цвет текста на кнопке */
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+.submit-button-poll:focus {
+  background-color: #FA8072; /* Новый цвет фона при фокусе */
+}
+
+label {
+  display: block; /* Размещаем label на новой строке */
+  font-size: 16px; /* Размер шрифта */
+  color: #333; /* Цвет текста */
+  margin-bottom: 5px; /* Отступ снизу */
+
+}
+
+/* Стили для полей ввода */
+input[type="text"] {
+  padding: 5px; /* Внутренние отступы */
+  width: 100%; /* Ширина поля ввода */
+  border: 1px solid #999; /* Граница поля ввода */
+  border-radius: 5px; /* Скругление углов */
+  background-color: white;
+}
+
+.offer {
+  width: 300px; /* Измените значение на необходимое вам */
+}
+
+input[name="offer"] {
+  width: 500px; /* Измените значение на необходимое вам */
+  height: 500px;
+}
+
+.shareLabel {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+

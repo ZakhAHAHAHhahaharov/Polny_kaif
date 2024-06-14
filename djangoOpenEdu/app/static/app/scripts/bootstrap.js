@@ -40,6 +40,20 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
  * ======================================================================== */
 
 
+function TextToCopy() {
+  const text = document.getElementById("text-to-copy");
+  if (text) {
+      navigator.clipboard.writeText(text.innerText)
+          .then(() => {
+              alert("Текст скопирован: " + text.innerText);
+          })
+          .catch(err => {
+              console.error('Не удалось скопировать текст: ', err);
+          });
+  }
+}
+
+
 +function ($) { "use strict";
 
   // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)

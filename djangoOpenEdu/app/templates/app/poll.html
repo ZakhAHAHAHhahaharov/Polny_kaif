@@ -7,15 +7,15 @@
         padding: 10px 20px; /* Поля внутри кнопки */
         border: none; /* Убираем границу */
         cursor: pointer; /* Изменяем вид курсора */
-        background-color: rgb(255, 105, 0); /* Цвет фона кнопки */
-        color: white; /* Цвет текста на кнопке */
+        background-color: #94f0f3; /* Цвет фона кнопки */
+        color: black; /* Цвет текста на кнопке */
         font-weight: bold;
         border-radius: 4px;
     }
     
 
     .submit-button-poll:focus {
-        background-color: #FA8072; /* Новый цвет фона при фокусе */
+        background-color: #94f0f3; /* Новый цвет фона при фокусе */
     }
 
      label {
@@ -35,11 +35,11 @@
         background-color: white;
     }
     .offer {
-        width: 300px; /* Измените значение на необходимое вам */
+        width: 50% /* Измените значение на необходимое вам */
     }
     input[name="offer"] {
-        width: 500px; /* Измените значение на необходимое вам */
-        height: 500px;
+        width: 50%; /* Измените значение на необходимое вам */
+        height: 50%;
     }
     .shareLabel {
         font-weight: bold;
@@ -60,34 +60,17 @@
         });
 
         button.addEventListener('mouseout', function () {
-            button.style.backgroundColor = '#FF6900'; // Вернуть исходный цвет кнопки при уходе курсора
-            button.style.color = 'white'
+            button.style.backgroundColor = '#94f0f3'; // Вернуть исходный цвет кнопки при уходе курсора
+            button.style.color = 'black'
         });
 
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const textInputs = document.querySelectorAll('input[type="text"]');
-
-        // Добавить обработчики событий для каждого поля ввода
-        textInputs.forEach(input => {
-            input.addEventListener('focus', function () {
-                this.style.backgroundColor = '#FF6900'; // Изменить цвет фона поля ввода при фокусировке
-                this.style.color = 'white';
-            });
-
-            input.addEventListener('blur', function () {
-                this.style.backgroundColor = 'white'; // Вернуть исходный цвет фона поля ввода при потере фокуса
-                this.style.color = 'black';
-            });
-        });
     });
 </script>
 
 
 <div>
     <br>
-    <h2 class="shareLabel">Поделитесь с нами с вашим самым секретным рецептом!</h2>
+    <h2 class="shareLabel">Оставьте отзыв о работе нашего центра</h2>
     <br>
     <div>
         <form method="post">
